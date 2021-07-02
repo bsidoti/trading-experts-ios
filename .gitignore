@@ -1,0 +1,53 @@
+# Mac OS X
+.DS_Store
+.VolumeIcon.icns
+.fseventsd
+
+# Xcode
+#
+
+## Build generated
+builds/
+DerivedData
+
+# Build products
+builds/
+*.o
+report.xml
+*.mobileprovision
+
+## Various settings
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata
+
+## Other
+*.xccheckout
+*.moved-aside
+*.xcuserstate
+*.xcscmblueprint
+
+## Obj-C/Swift specific
+*.hmap
+*.ipa
+
+# Carthage Artifacts
+Carthage/Checkouts
+
+# No Backup Files
+upload_dsym_results
+*~.nib
+*.swp
+*~
+*(Autosaved).rtfd/
+Backup[ ]of[ ]*.pages/
+Backup[ ]of[ ]*.key/
+Backup[ ]of[ ]*.numbers/
+/codesigndoc_exports
+certs/**

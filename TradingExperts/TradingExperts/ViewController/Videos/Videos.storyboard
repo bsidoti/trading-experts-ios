@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--VideosViewController-->
+        <scene sceneID="9WY-Tm-y83">
+            <objects>
+                <viewController storyboardIdentifier="VideosViewController" title="Videos" id="SUN-M8-XM0" userLabel="VideosViewController" customClass="VideosViewController" customModule="TradingExperts" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="e0H-QK-f7j">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="U25-Jr-AbQ">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="SUN-M8-XM0" id="V8U-UA-EXN"/>
+                                    <outlet property="delegate" destination="SUN-M8-XM0" id="nr1-oy-AwX"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="U25-Jr-AbQ" firstAttribute="leading" secondItem="aiT-1V-mNW" secondAttribute="leading" id="Cfr-jm-YHo"/>
+                            <constraint firstItem="aiT-1V-mNW" firstAttribute="trailing" secondItem="U25-Jr-AbQ" secondAttribute="trailing" id="NC4-Vy-WaN"/>
+                            <constraint firstItem="aiT-1V-mNW" firstAttribute="bottom" secondItem="U25-Jr-AbQ" secondAttribute="bottom" id="UMF-oh-Dtn"/>
+                            <constraint firstItem="U25-Jr-AbQ" firstAttribute="top" secondItem="aiT-1V-mNW" secondAttribute="top" id="aHH-cw-9jh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="aiT-1V-mNW"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Videos" id="m9B-F9-e9p"/>
+                    <connections>
+                        <outlet property="tableView" destination="U25-Jr-AbQ" id="Z86-co-Kqg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xZL-L2-dPI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-370" y="9"/>
+        </scene>
+    </scenes>
+</document>

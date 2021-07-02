@@ -1,0 +1,932 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		176D42D4262FDB4300336E85 /* CKLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176D42D3262FDB4300336E85 /* CKLoginViewController.swift */; };
+		177CE67A230A8AC00053EDC5 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 177CE679230A8AC00053EDC5 /* WebKit.framework */; };
+		1790087B265B1613005732E7 /* Clerk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1790087A265B1613005732E7 /* Clerk.swift */; };
+		17900888265B290C005732E7 /* ClerkObjs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17900887265B290C005732E7 /* ClerkObjs.swift */; };
+		179008A6265B6974005732E7 /* Barlow-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 17900894265B6973005732E7 /* Barlow-BlackItalic.ttf */; };
+		179008A7265B6974005732E7 /* Barlow-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 17900895265B6973005732E7 /* Barlow-LightItalic.ttf */; };
+		179008A8265B6974005732E7 /* Barlow-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 17900896265B6973005732E7 /* Barlow-SemiBoldItalic.ttf */; };
+		179008A9265B6974005732E7 /* Barlow-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 17900897265B6973005732E7 /* Barlow-Bold.ttf */; };
+		179008AA265B6974005732E7 /* Barlow-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 17900898265B6973005732E7 /* Barlow-Black.ttf */; };
+		179008AB265B6974005732E7 /* Barlow-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 17900899265B6973005732E7 /* Barlow-Light.ttf */; };
+		179008AC265B6974005732E7 /* Barlow-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1790089A265B6973005732E7 /* Barlow-ExtraLight.ttf */; };
+		179008AD265B6974005732E7 /* Barlow-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1790089B265B6973005732E7 /* Barlow-ExtraBoldItalic.ttf */; };
+		179008AE265B6974005732E7 /* Barlow-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1790089C265B6973005732E7 /* Barlow-MediumItalic.ttf */; };
+		179008AF265B6974005732E7 /* Barlow-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1790089D265B6973005732E7 /* Barlow-SemiBold.ttf */; };
+		179008B0265B6974005732E7 /* Barlow-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1790089E265B6973005732E7 /* Barlow-BoldItalic.ttf */; };
+		179008B1265B6974005732E7 /* Barlow-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1790089F265B6973005732E7 /* Barlow-Italic.ttf */; };
+		179008B2265B6974005732E7 /* Barlow-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 179008A0265B6973005732E7 /* Barlow-Regular.ttf */; };
+		179008B3265B6974005732E7 /* Barlow-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 179008A1265B6973005732E7 /* Barlow-Thin.ttf */; };
+		179008B4265B6974005732E7 /* Barlow-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 179008A2265B6973005732E7 /* Barlow-ExtraLightItalic.ttf */; };
+		179008B5265B6974005732E7 /* Barlow-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 179008A3265B6974005732E7 /* Barlow-Medium.ttf */; };
+		179008B6265B6974005732E7 /* Barlow-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 179008A4265B6974005732E7 /* Barlow-ThinItalic.ttf */; };
+		179008B7265B6974005732E7 /* Barlow-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 179008A5265B6974005732E7 /* Barlow-ExtraBold.ttf */; };
+		17BBE84F2681656E005F4D19 /* secret.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 17BBE8452681656E005F4D19 /* secret.pdf */; };
+		17BBE8502681656E005F4D19 /* gettingStarted.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 17BBE8462681656E005F4D19 /* gettingStarted.pdf */; };
+		17BBE8512681656E005F4D19 /* chartReading.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 17BBE8472681656E005F4D19 /* chartReading.pdf */; };
+		17BBE8522681656E005F4D19 /* whatsNext.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 17BBE8482681656E005F4D19 /* whatsNext.pdf */; };
+		17BBE8532681656E005F4D19 /* swingingWithSharks.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 17BBE8492681656E005F4D19 /* swingingWithSharks.pdf */; };
+		17BBE8542681656E005F4D19 /* dumbMoney.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 17BBE84A2681656E005F4D19 /* dumbMoney.pdf */; };
+		17BBE8552681656E005F4D19 /* gamePlanning.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 17BBE84B2681656E005F4D19 /* gamePlanning.pdf */; };
+		17BBE8562681656E005F4D19 /* tradeTheory.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 17BBE84C2681656E005F4D19 /* tradeTheory.pdf */; };
+		17BBE8572681656E005F4D19 /* tradingPsychology.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 17BBE84D2681656E005F4D19 /* tradingPsychology.pdf */; };
+		17BBE8582681656E005F4D19 /* takingProfits.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 17BBE84E2681656E005F4D19 /* takingProfits.pdf */; };
+		17F3735C2662BF6000343C12 /* TEHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F3735B2662BF6000343C12 /* TEHelpers.swift */; };
+		263BC33F1FE44A5700C5B80C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 263BC33E1FE44A5700C5B80C /* AppDelegate.swift */; };
+		263BC3441FE44A5700C5B80C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 263BC3421FE44A5700C5B80C /* Main.storyboard */; };
+		263BC3491FE44A5700C5B80C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 263BC3471FE44A5700C5B80C /* LaunchScreen.storyboard */; };
+		263BC3511FE44E9A00C5B80C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 263BC3501FE44E9A00C5B80C /* GoogleService-Info.plist */; };
+		264600A921CA0F1900F2CF2E /* Membership.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264600A821CA0F1900F2CF2E /* Membership.swift */; };
+		2646052C21C5B58F00DA8B78 /* TEGlobalStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2646052B21C5B58F00DA8B78 /* TEGlobalStyles.swift */; };
+		2646052E21C5B5A100DA8B78 /* TEFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2646052D21C5B5A100DA8B78 /* TEFont.swift */; };
+		2646053621C62EED00DA8B78 /* StandardKeyboardToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2646053521C62EED00DA8B78 /* StandardKeyboardToolbar.swift */; };
+		26E467D42005E93000C63E42 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E467D32005E93000C63E42 /* MainTabBarController.swift */; };
+		26E467D62005EA4A00C63E42 /* VideosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E467D52005EA4A00C63E42 /* VideosViewController.swift */; };
+		26FD53652069F1B5006735E7 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FD53642069F1B5006735E7 /* ProfileViewController.swift */; };
+		26FD53672069F2D6006735E7 /* PdfViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FD53662069F2D6006735E7 /* PdfViewController.swift */; };
+		3EBB75D36656ECEF9A265663 /* Pods_TradingExperts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B05F1F1A313B8710E70681E /* Pods_TradingExperts.framework */; };
+		6E01F1BB21532CD5006DDB0F /* TEVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E01F1BA21532CD5006DDB0F /* TEVideo.swift */; };
+		6E477876215344F00083FF10 /* Videos.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E477875215344F00083FF10 /* Videos.storyboard */; };
+		6E477878215345C20083FF10 /* VideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E477877215345C20083FF10 /* VideoTableViewCell.swift */; };
+		6E47787A215345CE0083FF10 /* VideoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E477879215345CE0083FF10 /* VideoTableViewCell.xib */; };
+		6E6CD68E2131261700E45A02 /* AlertsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E6CD68D2131261700E45A02 /* AlertsViewController.swift */; };
+		6E6CD6912131288700E45A02 /* Alerts.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E6CD6902131288700E45A02 /* Alerts.storyboard */; };
+		6E6CD69321312B3A00E45A02 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E6CD69221312B3A00E45A02 /* Alert.swift */; };
+		6E6CD69621312D1C00E45A02 /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E6CD69521312D1C00E45A02 /* NetworkController.swift */; };
+		6E6CD69921312F1800E45A02 /* AlertTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E6CD69821312F1800E45A02 /* AlertTableViewCell.swift */; };
+		6E6CD69B21312F2400E45A02 /* AlertTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E6CD69A21312F2400E45A02 /* AlertTableViewCell.xib */; };
+		6E91D142214A3EBB0005DF89 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E91D141214A3EBB0005DF89 /* UIViewControllerExtension.swift */; };
+		6E91D145214C77D40005DF89 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E91D144214C77D40005DF89 /* Profile.storyboard */; };
+		6EEB5CD6215591400051BED4 /* HorizontalScrollingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EEB5CD4215591400051BED4 /* HorizontalScrollingTableViewCell.swift */; };
+		6EEB5CD7215591400051BED4 /* HorizontalScrollingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6EEB5CD5215591400051BED4 /* HorizontalScrollingTableViewCell.xib */; };
+		6EEB5CD9215595230051BED4 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EEB5CD8215595220051BED4 /* ImageCollectionViewCell.swift */; };
+		6EEB5CDB2155957D0051BED4 /* Handbook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EEB5CDA2155957D0051BED4 /* Handbook.swift */; };
+		6EEB5CF62159F6180051BED4 /* ImageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6EEB5CF52159F6180051BED4 /* ImageCollectionViewCell.xib */; };
+		6EEB5CF8215A03B60051BED4 /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EEB5CF7215A03B60051BED4 /* Story.swift */; };
+		6EEB5D11215A06A50051BED4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6EEB5D10215A06A50051BED4 /* Assets.xcassets */; };
+		6EEB5D24215A06EF0051BED4 /* my_first_ipo_twitter.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 6EEB5D12215A06ED0051BED4 /* my_first_ipo_twitter.pdf */; };
+		6EEB5D25215A06EF0051BED4 /* apple_flash_crash.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 6EEB5D13215A06ED0051BED4 /* apple_flash_crash.pdf */; };
+		6EEB5D26215A06EF0051BED4 /* thats_impossible.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 6EEB5D14215A06ED0051BED4 /* thats_impossible.pdf */; };
+		6EEB5D27215A06EF0051BED4 /* get_to_zee_chopper.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 6EEB5D15215A06ED0051BED4 /* get_to_zee_chopper.pdf */; };
+		6EEB5D28215A06EF0051BED4 /* baba_ipo.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 6EEB5D16215A06ED0051BED4 /* baba_ipo.pdf */; };
+		6EEB5D29215A06EF0051BED4 /* i_can_teach_myself.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 6EEB5D17215A06ED0051BED4 /* i_can_teach_myself.pdf */; };
+		6EEB5D2A215A06EF0051BED4 /* are_penny_stocks_for_losers.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 6EEB5D18215A06ED0051BED4 /* are_penny_stocks_for_losers.pdf */; };
+		6EEB5D2B215A06EF0051BED4 /* sure_well_take_the_limo.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 6EEB5D19215A06EE0051BED4 /* sure_well_take_the_limo.pdf */; };
+		6EEB5D2C215A06EF0051BED4 /* wheres_this_gonna_open.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 6EEB5D1A215A06EE0051BED4 /* wheres_this_gonna_open.pdf */; };
+		6EEB5D2D215A06EF0051BED4 /* the_og_book.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 6EEB5D1B215A06EE0051BED4 /* the_og_book.pdf */; };
+		6EEB5D2E215A06EF0051BED4 /* who_needs_a_game_plan.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 6EEB5D1C215A06EE0051BED4 /* who_needs_a_game_plan.pdf */; };
+		6EEB5D2F215A06EF0051BED4 /* the_bidu_massacre.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 6EEB5D1D215A06EE0051BED4 /* the_bidu_massacre.pdf */; };
+		6EEB5D30215A06EF0051BED4 /* get_out.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 6EEB5D1E215A06EE0051BED4 /* get_out.pdf */; };
+		6EEB5D32215A06EF0051BED4 /* why_the_fuck_are_you_here.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 6EEB5D20215A06EF0051BED4 /* why_the_fuck_are_you_here.pdf */; };
+		6EEB5D33215A06EF0051BED4 /* dumb_money.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 6EEB5D21215A06EF0051BED4 /* dumb_money.pdf */; };
+		6EEB5D34215A06EF0051BED4 /* shouldve_let_em_steal_it.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 6EEB5D22215A06EF0051BED4 /* shouldve_let_em_steal_it.pdf */; };
+		6EEB5D35215A06EF0051BED4 /* perspective.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 6EEB5D23215A06EF0051BED4 /* perspective.pdf */; };
+		6EEB5D37215B2EAB0051BED4 /* PdfViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6EEB5D36215B2EAB0051BED4 /* PdfViewController.storyboard */; };
+		6EEB5D3A215B349B0051BED4 /* LoginHeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6EEB5D39215B349B0051BED4 /* LoginHeaderTableViewCell.xib */; };
+		6EEB5D3C215B34AA0051BED4 /* LoginHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EEB5D3B215B34AA0051BED4 /* LoginHeaderTableViewCell.swift */; };
+		6EEE6324212E7D4000095B42 /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EEE6323212E7D4000095B42 /* Globals.swift */; };
+		6EF308E72133725900213D1B /* TEColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF308E62133725900213D1B /* TEColor.swift */; };
+		6EF3E2E42148D4510035B37D /* LearningCenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF3E2E32148D4510035B37D /* LearningCenterViewController.swift */; };
+		6EF3E2E62148D47A0035B37D /* LearningCenter.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6EF3E2E52148D47A0035B37D /* LearningCenter.storyboard */; };
+		6EF3E2EA2148D51A0035B37D /* LearningCenterTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6EF3E2E92148D51A0035B37D /* LearningCenterTableViewCell.xib */; };
+		6EF3E2ED2148D7640035B37D /* AccountManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF3E2EC2148D7640035B37D /* AccountManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0B05F1F1A313B8710E70681E /* Pods_TradingExperts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TradingExperts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		176D42D3262FDB4300336E85 /* CKLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CKLoginViewController.swift; sourceTree = "<group>"; };
+		177CE679230A8AC00053EDC5 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		1790087A265B1613005732E7 /* Clerk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clerk.swift; sourceTree = "<group>"; };
+		17900887265B290C005732E7 /* ClerkObjs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClerkObjs.swift; sourceTree = "<group>"; };
+		17900894265B6973005732E7 /* Barlow-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Barlow-BlackItalic.ttf"; sourceTree = "<group>"; };
+		17900895265B6973005732E7 /* Barlow-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Barlow-LightItalic.ttf"; sourceTree = "<group>"; };
+		17900896265B6973005732E7 /* Barlow-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Barlow-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		17900897265B6973005732E7 /* Barlow-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Barlow-Bold.ttf"; sourceTree = "<group>"; };
+		17900898265B6973005732E7 /* Barlow-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Barlow-Black.ttf"; sourceTree = "<group>"; };
+		17900899265B6973005732E7 /* Barlow-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Barlow-Light.ttf"; sourceTree = "<group>"; };
+		1790089A265B6973005732E7 /* Barlow-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Barlow-ExtraLight.ttf"; sourceTree = "<group>"; };
+		1790089B265B6973005732E7 /* Barlow-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Barlow-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		1790089C265B6973005732E7 /* Barlow-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Barlow-MediumItalic.ttf"; sourceTree = "<group>"; };
+		1790089D265B6973005732E7 /* Barlow-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Barlow-SemiBold.ttf"; sourceTree = "<group>"; };
+		1790089E265B6973005732E7 /* Barlow-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Barlow-BoldItalic.ttf"; sourceTree = "<group>"; };
+		1790089F265B6973005732E7 /* Barlow-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Barlow-Italic.ttf"; sourceTree = "<group>"; };
+		179008A0265B6973005732E7 /* Barlow-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Barlow-Regular.ttf"; sourceTree = "<group>"; };
+		179008A1265B6973005732E7 /* Barlow-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Barlow-Thin.ttf"; sourceTree = "<group>"; };
+		179008A2265B6973005732E7 /* Barlow-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Barlow-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		179008A3265B6974005732E7 /* Barlow-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Barlow-Medium.ttf"; sourceTree = "<group>"; };
+		179008A4265B6974005732E7 /* Barlow-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Barlow-ThinItalic.ttf"; sourceTree = "<group>"; };
+		179008A5265B6974005732E7 /* Barlow-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Barlow-ExtraBold.ttf"; sourceTree = "<group>"; };
+		17BBE8452681656E005F4D19 /* secret.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = secret.pdf; sourceTree = "<group>"; };
+		17BBE8462681656E005F4D19 /* gettingStarted.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = gettingStarted.pdf; sourceTree = "<group>"; };
+		17BBE8472681656E005F4D19 /* chartReading.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = chartReading.pdf; sourceTree = "<group>"; };
+		17BBE8482681656E005F4D19 /* whatsNext.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = whatsNext.pdf; sourceTree = "<group>"; };
+		17BBE8492681656E005F4D19 /* swingingWithSharks.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = swingingWithSharks.pdf; sourceTree = "<group>"; };
+		17BBE84A2681656E005F4D19 /* dumbMoney.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = dumbMoney.pdf; sourceTree = "<group>"; };
+		17BBE84B2681656E005F4D19 /* gamePlanning.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = gamePlanning.pdf; sourceTree = "<group>"; };
+		17BBE84C2681656E005F4D19 /* tradeTheory.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = tradeTheory.pdf; sourceTree = "<group>"; };
+		17BBE84D2681656E005F4D19 /* tradingPsychology.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = tradingPsychology.pdf; sourceTree = "<group>"; };
+		17BBE84E2681656E005F4D19 /* takingProfits.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = takingProfits.pdf; sourceTree = "<group>"; };
+		17F3735B2662BF6000343C12 /* TEHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TEHelpers.swift; sourceTree = "<group>"; };
+		263BC33B1FE44A5700C5B80C /* TradingExperts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TradingExperts.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		263BC33E1FE44A5700C5B80C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		263BC3431FE44A5700C5B80C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		263BC3481FE44A5700C5B80C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		263BC34A1FE44A5700C5B80C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		263BC3501FE44E9A00C5B80C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		264600A821CA0F1900F2CF2E /* Membership.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Membership.swift; sourceTree = "<group>"; };
+		2646052B21C5B58F00DA8B78 /* TEGlobalStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TEGlobalStyles.swift; sourceTree = "<group>"; };
+		2646052D21C5B5A100DA8B78 /* TEFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TEFont.swift; sourceTree = "<group>"; };
+		2646053521C62EED00DA8B78 /* StandardKeyboardToolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardKeyboardToolbar.swift; sourceTree = "<group>"; };
+		26778F352082CC31006C6BD2 /* TradingExperts.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TradingExperts.entitlements; sourceTree = "<group>"; };
+		26E467D32005E93000C63E42 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		26E467D52005EA4A00C63E42 /* VideosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosViewController.swift; sourceTree = "<group>"; };
+		26FD53642069F1B5006735E7 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		26FD53662069F2D6006735E7 /* PdfViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PdfViewController.swift; sourceTree = "<group>"; };
+		6E01F1BA21532CD5006DDB0F /* TEVideo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TEVideo.swift; sourceTree = "<group>"; };
+		6E477875215344F00083FF10 /* Videos.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Videos.storyboard; sourceTree = "<group>"; };
+		6E477877215345C20083FF10 /* VideoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoTableViewCell.swift; sourceTree = "<group>"; };
+		6E477879215345CE0083FF10 /* VideoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoTableViewCell.xib; sourceTree = "<group>"; };
+		6E47787C21546C2C0083FF10 /* TradingExperts-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TradingExperts-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		6E6CD68D2131261700E45A02 /* AlertsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertsViewController.swift; sourceTree = "<group>"; };
+		6E6CD6902131288700E45A02 /* Alerts.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Alerts.storyboard; sourceTree = "<group>"; };
+		6E6CD69221312B3A00E45A02 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		6E6CD69521312D1C00E45A02 /* NetworkController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkController.swift; sourceTree = "<group>"; };
+		6E6CD69821312F1800E45A02 /* AlertTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertTableViewCell.swift; sourceTree = "<group>"; };
+		6E6CD69A21312F2400E45A02 /* AlertTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlertTableViewCell.xib; sourceTree = "<group>"; };
+		6E91D141214A3EBB0005DF89 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		6E91D144214C77D40005DF89 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		6EEB5CD4215591400051BED4 /* HorizontalScrollingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorizontalScrollingTableViewCell.swift; sourceTree = "<group>"; };
+		6EEB5CD5215591400051BED4 /* HorizontalScrollingTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HorizontalScrollingTableViewCell.xib; sourceTree = "<group>"; };
+		6EEB5CD8215595220051BED4 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		6EEB5CDA2155957D0051BED4 /* Handbook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Handbook.swift; sourceTree = "<group>"; };
+		6EEB5CF52159F6180051BED4 /* ImageCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageCollectionViewCell.xib; sourceTree = "<group>"; };
+		6EEB5CF7215A03B60051BED4 /* Story.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
+		6EEB5D10215A06A50051BED4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6EEB5D12215A06ED0051BED4 /* my_first_ipo_twitter.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = my_first_ipo_twitter.pdf; sourceTree = "<group>"; };
+		6EEB5D13215A06ED0051BED4 /* apple_flash_crash.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = apple_flash_crash.pdf; sourceTree = "<group>"; };
+		6EEB5D14215A06ED0051BED4 /* thats_impossible.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = thats_impossible.pdf; sourceTree = "<group>"; };
+		6EEB5D15215A06ED0051BED4 /* get_to_zee_chopper.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = get_to_zee_chopper.pdf; sourceTree = "<group>"; };
+		6EEB5D16215A06ED0051BED4 /* baba_ipo.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = baba_ipo.pdf; sourceTree = "<group>"; };
+		6EEB5D17215A06ED0051BED4 /* i_can_teach_myself.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = i_can_teach_myself.pdf; sourceTree = "<group>"; };
+		6EEB5D18215A06ED0051BED4 /* are_penny_stocks_for_losers.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = are_penny_stocks_for_losers.pdf; sourceTree = "<group>"; };
+		6EEB5D19215A06EE0051BED4 /* sure_well_take_the_limo.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = sure_well_take_the_limo.pdf; sourceTree = "<group>"; };
+		6EEB5D1A215A06EE0051BED4 /* wheres_this_gonna_open.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = wheres_this_gonna_open.pdf; sourceTree = "<group>"; };
+		6EEB5D1B215A06EE0051BED4 /* the_og_book.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = the_og_book.pdf; sourceTree = "<group>"; };
+		6EEB5D1C215A06EE0051BED4 /* who_needs_a_game_plan.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = who_needs_a_game_plan.pdf; sourceTree = "<group>"; };
+		6EEB5D1D215A06EE0051BED4 /* the_bidu_massacre.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = the_bidu_massacre.pdf; sourceTree = "<group>"; };
+		6EEB5D1E215A06EE0051BED4 /* get_out.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = get_out.pdf; sourceTree = "<group>"; };
+		6EEB5D20215A06EF0051BED4 /* why_the_fuck_are_you_here.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = why_the_fuck_are_you_here.pdf; sourceTree = "<group>"; };
+		6EEB5D21215A06EF0051BED4 /* dumb_money.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = dumb_money.pdf; sourceTree = "<group>"; };
+		6EEB5D22215A06EF0051BED4 /* shouldve_let_em_steal_it.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = shouldve_let_em_steal_it.pdf; sourceTree = "<group>"; };
+		6EEB5D23215A06EF0051BED4 /* perspective.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = perspective.pdf; sourceTree = "<group>"; };
+		6EEB5D36215B2EAB0051BED4 /* PdfViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PdfViewController.storyboard; sourceTree = "<group>"; };
+		6EEB5D39215B349B0051BED4 /* LoginHeaderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginHeaderTableViewCell.xib; sourceTree = "<group>"; };
+		6EEB5D3B215B34AA0051BED4 /* LoginHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginHeaderTableViewCell.swift; sourceTree = "<group>"; };
+		6EEE6323212E7D4000095B42 /* Globals.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Globals.swift; sourceTree = "<group>"; };
+		6EF308E62133725900213D1B /* TEColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TEColor.swift; sourceTree = "<group>"; };
+		6EF3E2E32148D4510035B37D /* LearningCenterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningCenterViewController.swift; sourceTree = "<group>"; };
+		6EF3E2E52148D47A0035B37D /* LearningCenter.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LearningCenter.storyboard; sourceTree = "<group>"; };
+		6EF3E2E92148D51A0035B37D /* LearningCenterTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LearningCenterTableViewCell.xib; sourceTree = "<group>"; };
+		6EF3E2EC2148D7640035B37D /* AccountManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountManager.swift; sourceTree = "<group>"; };
+		8A5ED5E4D430CA18D5312EB4 /* Pods-TradingExperts.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TradingExperts.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TradingExperts/Pods-TradingExperts.debug.xcconfig"; sourceTree = "<group>"; };
+		E1774C45BAFF240217F76EF8 /* Pods-TradingExperts.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TradingExperts.release.xcconfig"; path = "Pods/Target Support Files/Pods-TradingExperts/Pods-TradingExperts.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		263BC3381FE44A5700C5B80C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				177CE67A230A8AC00053EDC5 /* WebKit.framework in Frameworks */,
+				3EBB75D36656ECEF9A265663 /* Pods_TradingExperts.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0DB7737F5468700D4A684499 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8A5ED5E4D430CA18D5312EB4 /* Pods-TradingExperts.debug.xcconfig */,
+				E1774C45BAFF240217F76EF8 /* Pods-TradingExperts.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		176D42D2262FDA5E00336E85 /* Clerk */ = {
+			isa = PBXGroup;
+			children = (
+				176D42D3262FDB4300336E85 /* CKLoginViewController.swift */,
+				1790087A265B1613005732E7 /* Clerk.swift */,
+				17900887265B290C005732E7 /* ClerkObjs.swift */,
+			);
+			path = Clerk;
+			sourceTree = "<group>";
+		};
+		17F3735A2662BF4F00343C12 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				17F3735B2662BF6000343C12 /* TEHelpers.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		263BC3321FE44A5700C5B80C = {
+			isa = PBXGroup;
+			children = (
+				263BC33D1FE44A5700C5B80C /* TradingExperts */,
+				263BC33C1FE44A5700C5B80C /* Products */,
+				0DB7737F5468700D4A684499 /* Pods */,
+				B5D4EDBEA2512E8E969111B3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		263BC33C1FE44A5700C5B80C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				263BC33B1FE44A5700C5B80C /* TradingExperts.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		263BC33D1FE44A5700C5B80C /* TradingExperts */ = {
+			isa = PBXGroup;
+			children = (
+				263BC33E1FE44A5700C5B80C /* AppDelegate.swift */,
+				176D42D2262FDA5E00336E85 /* Clerk */,
+				6E6CD68F2131286600E45A02 /* ViewController */,
+				6EEB5CD3215591150051BED4 /* Views */,
+				6E6CD69421312D0F00E45A02 /* Networking */,
+				6EF3E2EB2148D73F0035B37D /* Singletons */,
+				6E6CD69721312D4300E45A02 /* Models */,
+				6EEB5D38215B33F20051BED4 /* Global */,
+				26FD53612069EC57006735E7 /* Supporting Files */,
+			);
+			path = TradingExperts;
+			sourceTree = "<group>";
+		};
+		264604F421C5A6A900DA8B78 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				17900898265B6973005732E7 /* Barlow-Black.ttf */,
+				17900894265B6973005732E7 /* Barlow-BlackItalic.ttf */,
+				17900897265B6973005732E7 /* Barlow-Bold.ttf */,
+				1790089E265B6973005732E7 /* Barlow-BoldItalic.ttf */,
+				179008A5265B6974005732E7 /* Barlow-ExtraBold.ttf */,
+				1790089B265B6973005732E7 /* Barlow-ExtraBoldItalic.ttf */,
+				1790089A265B6973005732E7 /* Barlow-ExtraLight.ttf */,
+				179008A2265B6973005732E7 /* Barlow-ExtraLightItalic.ttf */,
+				1790089F265B6973005732E7 /* Barlow-Italic.ttf */,
+				17900899265B6973005732E7 /* Barlow-Light.ttf */,
+				17900895265B6973005732E7 /* Barlow-LightItalic.ttf */,
+				179008A3265B6974005732E7 /* Barlow-Medium.ttf */,
+				1790089C265B6973005732E7 /* Barlow-MediumItalic.ttf */,
+				179008A0265B6973005732E7 /* Barlow-Regular.ttf */,
+				1790089D265B6973005732E7 /* Barlow-SemiBold.ttf */,
+				17900896265B6973005732E7 /* Barlow-SemiBoldItalic.ttf */,
+				179008A1265B6973005732E7 /* Barlow-Thin.ttf */,
+				179008A4265B6974005732E7 /* Barlow-ThinItalic.ttf */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
+		26643E8A20950E3D0035918F /* Entitlements */ = {
+			isa = PBXGroup;
+			children = (
+				26778F352082CC31006C6BD2 /* TradingExperts.entitlements */,
+			);
+			name = Entitlements;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		26FD53612069EC57006735E7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				264604F421C5A6A900DA8B78 /* fonts */,
+				6EEB5D10215A06A50051BED4 /* Assets.xcassets */,
+				6EEB5D0F215A056D0051BED4 /* stories */,
+				6EEB5CFA215A055F0051BED4 /* handbooks */,
+				6E47787C21546C2C0083FF10 /* TradingExperts-Bridging-Header.h */,
+				263BC3471FE44A5700C5B80C /* LaunchScreen.storyboard */,
+				263BC34A1FE44A5700C5B80C /* Info.plist */,
+				263BC3501FE44E9A00C5B80C /* GoogleService-Info.plist */,
+				26643E8A20950E3D0035918F /* Entitlements */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		26FD53632069EC8B006735E7 /* MainTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				26E467D32005E93000C63E42 /* MainTabBarController.swift */,
+				263BC3421FE44A5700C5B80C /* Main.storyboard */,
+			);
+			path = MainTabBar;
+			sourceTree = "<group>";
+		};
+		6E6CD68A2131255A00E45A02 /* AlertsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				6E6CD68D2131261700E45A02 /* AlertsViewController.swift */,
+				6E6CD6902131288700E45A02 /* Alerts.storyboard */,
+				6E6CD69821312F1800E45A02 /* AlertTableViewCell.swift */,
+				6E6CD69A21312F2400E45A02 /* AlertTableViewCell.xib */,
+			);
+			path = AlertsViewController;
+			sourceTree = "<group>";
+		};
+		6E6CD68B2131259800E45A02 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				26FD53642069F1B5006735E7 /* ProfileViewController.swift */,
+				6E91D144214C77D40005DF89 /* Profile.storyboard */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		6E6CD68F2131286600E45A02 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				17F3735A2662BF4F00343C12 /* Helpers */,
+				26FD53632069EC8B006735E7 /* MainTabBar */,
+				6E91D146214C7CCD0005DF89 /* Videos */,
+				6EF3E2E22148D42E0035B37D /* LearningCenterViewController */,
+				6E6CD68B2131259800E45A02 /* Profile */,
+				6E6CD68A2131255A00E45A02 /* AlertsViewController */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		6E6CD69421312D0F00E45A02 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				6E6CD69521312D1C00E45A02 /* NetworkController.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		6E6CD69721312D4300E45A02 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6E6CD69221312B3A00E45A02 /* Alert.swift */,
+				6E01F1BA21532CD5006DDB0F /* TEVideo.swift */,
+				6EEB5CDA2155957D0051BED4 /* Handbook.swift */,
+				6EEB5CF7215A03B60051BED4 /* Story.swift */,
+				264600A821CA0F1900F2CF2E /* Membership.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6E91D146214C7CCD0005DF89 /* Videos */ = {
+			isa = PBXGroup;
+			children = (
+				26E467D52005EA4A00C63E42 /* VideosViewController.swift */,
+				6E477875215344F00083FF10 /* Videos.storyboard */,
+				6E477877215345C20083FF10 /* VideoTableViewCell.swift */,
+				6E477879215345CE0083FF10 /* VideoTableViewCell.xib */,
+			);
+			path = Videos;
+			sourceTree = "<group>";
+		};
+		6EEB5CD3215591150051BED4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2646053521C62EED00DA8B78 /* StandardKeyboardToolbar.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6EEB5CFA215A055F0051BED4 /* handbooks */ = {
+			isa = PBXGroup;
+			children = (
+				17BBE8472681656E005F4D19 /* chartReading.pdf */,
+				17BBE84A2681656E005F4D19 /* dumbMoney.pdf */,
+				17BBE84B2681656E005F4D19 /* gamePlanning.pdf */,
+				17BBE8462681656E005F4D19 /* gettingStarted.pdf */,
+				17BBE8492681656E005F4D19 /* swingingWithSharks.pdf */,
+				17BBE84E2681656E005F4D19 /* takingProfits.pdf */,
+				17BBE8452681656E005F4D19 /* secret.pdf */,
+				17BBE84C2681656E005F4D19 /* tradeTheory.pdf */,
+				17BBE84D2681656E005F4D19 /* tradingPsychology.pdf */,
+				17BBE8482681656E005F4D19 /* whatsNext.pdf */,
+			);
+			path = handbooks;
+			sourceTree = "<group>";
+		};
+		6EEB5D0F215A056D0051BED4 /* stories */ = {
+			isa = PBXGroup;
+			children = (
+				6EEB5D13215A06ED0051BED4 /* apple_flash_crash.pdf */,
+				6EEB5D18215A06ED0051BED4 /* are_penny_stocks_for_losers.pdf */,
+				6EEB5D16215A06ED0051BED4 /* baba_ipo.pdf */,
+				6EEB5D21215A06EF0051BED4 /* dumb_money.pdf */,
+				6EEB5D1E215A06EE0051BED4 /* get_out.pdf */,
+				6EEB5D15215A06ED0051BED4 /* get_to_zee_chopper.pdf */,
+				6EEB5D17215A06ED0051BED4 /* i_can_teach_myself.pdf */,
+				6EEB5D12215A06ED0051BED4 /* my_first_ipo_twitter.pdf */,
+				6EEB5D23215A06EF0051BED4 /* perspective.pdf */,
+				6EEB5D22215A06EF0051BED4 /* shouldve_let_em_steal_it.pdf */,
+				6EEB5D19215A06EE0051BED4 /* sure_well_take_the_limo.pdf */,
+				6EEB5D14215A06ED0051BED4 /* thats_impossible.pdf */,
+				6EEB5D1D215A06EE0051BED4 /* the_bidu_massacre.pdf */,
+				6EEB5D1B215A06EE0051BED4 /* the_og_book.pdf */,
+				6EEB5D1A215A06EE0051BED4 /* wheres_this_gonna_open.pdf */,
+				6EEB5D1C215A06EE0051BED4 /* who_needs_a_game_plan.pdf */,
+				6EEB5D20215A06EF0051BED4 /* why_the_fuck_are_you_here.pdf */,
+			);
+			path = stories;
+			sourceTree = "<group>";
+		};
+		6EEB5D38215B33F20051BED4 /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				6E91D141214A3EBB0005DF89 /* UIViewControllerExtension.swift */,
+				6EEE6323212E7D4000095B42 /* Globals.swift */,
+				6EF308E62133725900213D1B /* TEColor.swift */,
+				2646052D21C5B5A100DA8B78 /* TEFont.swift */,
+				2646052B21C5B58F00DA8B78 /* TEGlobalStyles.swift */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		6EEB5D3D215B35710051BED4 /* HorizontalCell */ = {
+			isa = PBXGroup;
+			children = (
+				6EEB5CD4215591400051BED4 /* HorizontalScrollingTableViewCell.swift */,
+				6EEB5CD5215591400051BED4 /* HorizontalScrollingTableViewCell.xib */,
+				6EEB5CD8215595220051BED4 /* ImageCollectionViewCell.swift */,
+				6EEB5CF52159F6180051BED4 /* ImageCollectionViewCell.xib */,
+			);
+			path = HorizontalCell;
+			sourceTree = "<group>";
+		};
+		6EF3E2E22148D42E0035B37D /* LearningCenterViewController */ = {
+			isa = PBXGroup;
+			children = (
+				6EEB5D3B215B34AA0051BED4 /* LoginHeaderTableViewCell.swift */,
+				6EEB5D39215B349B0051BED4 /* LoginHeaderTableViewCell.xib */,
+				6EF3E2E32148D4510035B37D /* LearningCenterViewController.swift */,
+				6EF3E2E52148D47A0035B37D /* LearningCenter.storyboard */,
+				6EF3E2E92148D51A0035B37D /* LearningCenterTableViewCell.xib */,
+				26FD53662069F2D6006735E7 /* PdfViewController.swift */,
+				6EEB5D36215B2EAB0051BED4 /* PdfViewController.storyboard */,
+				6EEB5D3D215B35710051BED4 /* HorizontalCell */,
+			);
+			path = LearningCenterViewController;
+			sourceTree = "<group>";
+		};
+		6EF3E2EB2148D73F0035B37D /* Singletons */ = {
+			isa = PBXGroup;
+			children = (
+				6EF3E2EC2148D7640035B37D /* AccountManager.swift */,
+			);
+			path = Singletons;
+			sourceTree = "<group>";
+		};
+		B5D4EDBEA2512E8E969111B3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				177CE679230A8AC00053EDC5 /* WebKit.framework */,
+				0B05F1F1A313B8710E70681E /* Pods_TradingExperts.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		263BC33A1FE44A5700C5B80C /* TradingExperts */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 263BC34D1FE44A5700C5B80C /* Build configuration list for PBXNativeTarget "TradingExperts" */;
+			buildPhases = (
+				3F5775DD015226F9E545073E /* [CP] Check Pods Manifest.lock */,
+				263BC3371FE44A5700C5B80C /* Sources */,
+				263BC3381FE44A5700C5B80C /* Frameworks */,
+				263BC3391FE44A5700C5B80C /* Resources */,
+				5B3D9DF5E87707BE670F6787 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TradingExperts;
+			productName = TradingExperts;
+			productReference = 263BC33B1FE44A5700C5B80C /* TradingExperts.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		263BC3331FE44A5700C5B80C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 1240;
+				ORGANIZATIONNAME = "Braden Sidoti";
+				TargetAttributes = {
+					263BC33A1FE44A5700C5B80C = {
+						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1240;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplePay = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 263BC3361FE44A5700C5B80C /* Build configuration list for PBXProject "TradingExperts" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 263BC3321FE44A5700C5B80C;
+			productRefGroup = 263BC33C1FE44A5700C5B80C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				263BC33A1FE44A5700C5B80C /* TradingExperts */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		263BC3391FE44A5700C5B80C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				179008AD265B6974005732E7 /* Barlow-ExtraBoldItalic.ttf in Resources */,
+				179008A7265B6974005732E7 /* Barlow-LightItalic.ttf in Resources */,
+				179008B5265B6974005732E7 /* Barlow-Medium.ttf in Resources */,
+				17BBE8502681656E005F4D19 /* gettingStarted.pdf in Resources */,
+				17BBE8562681656E005F4D19 /* tradeTheory.pdf in Resources */,
+				179008B0265B6974005732E7 /* Barlow-BoldItalic.ttf in Resources */,
+				179008A6265B6974005732E7 /* Barlow-BlackItalic.ttf in Resources */,
+				17BBE8572681656E005F4D19 /* tradingPsychology.pdf in Resources */,
+				179008AA265B6974005732E7 /* Barlow-Black.ttf in Resources */,
+				179008B7265B6974005732E7 /* Barlow-ExtraBold.ttf in Resources */,
+				17BBE8552681656E005F4D19 /* gamePlanning.pdf in Resources */,
+				6EEB5D24215A06EF0051BED4 /* my_first_ipo_twitter.pdf in Resources */,
+				6EEB5D2B215A06EF0051BED4 /* sure_well_take_the_limo.pdf in Resources */,
+				6EF3E2EA2148D51A0035B37D /* LearningCenterTableViewCell.xib in Resources */,
+				17BBE8532681656E005F4D19 /* swingingWithSharks.pdf in Resources */,
+				6EEB5D2F215A06EF0051BED4 /* the_bidu_massacre.pdf in Resources */,
+				6EEB5D2C215A06EF0051BED4 /* wheres_this_gonna_open.pdf in Resources */,
+				6E47787A215345CE0083FF10 /* VideoTableViewCell.xib in Resources */,
+				17BBE8582681656E005F4D19 /* takingProfits.pdf in Resources */,
+				6EEB5D34215A06EF0051BED4 /* shouldve_let_em_steal_it.pdf in Resources */,
+				263BC3511FE44E9A00C5B80C /* GoogleService-Info.plist in Resources */,
+				179008AE265B6974005732E7 /* Barlow-MediumItalic.ttf in Resources */,
+				17BBE8512681656E005F4D19 /* chartReading.pdf in Resources */,
+				6EEB5D33215A06EF0051BED4 /* dumb_money.pdf in Resources */,
+				6EEB5CF62159F6180051BED4 /* ImageCollectionViewCell.xib in Resources */,
+				179008AC265B6974005732E7 /* Barlow-ExtraLight.ttf in Resources */,
+				6EEB5D29215A06EF0051BED4 /* i_can_teach_myself.pdf in Resources */,
+				179008B1265B6974005732E7 /* Barlow-Italic.ttf in Resources */,
+				179008A8265B6974005732E7 /* Barlow-SemiBoldItalic.ttf in Resources */,
+				179008B6265B6974005732E7 /* Barlow-ThinItalic.ttf in Resources */,
+				6EEB5CD7215591400051BED4 /* HorizontalScrollingTableViewCell.xib in Resources */,
+				17BBE84F2681656E005F4D19 /* secret.pdf in Resources */,
+				263BC3491FE44A5700C5B80C /* LaunchScreen.storyboard in Resources */,
+				17BBE8542681656E005F4D19 /* dumbMoney.pdf in Resources */,
+				6EEB5D35215A06EF0051BED4 /* perspective.pdf in Resources */,
+				6EEB5D37215B2EAB0051BED4 /* PdfViewController.storyboard in Resources */,
+				6E6CD6912131288700E45A02 /* Alerts.storyboard in Resources */,
+				6E6CD69B21312F2400E45A02 /* AlertTableViewCell.xib in Resources */,
+				6EEB5D25215A06EF0051BED4 /* apple_flash_crash.pdf in Resources */,
+				6E91D145214C77D40005DF89 /* Profile.storyboard in Resources */,
+				179008AB265B6974005732E7 /* Barlow-Light.ttf in Resources */,
+				6EEB5D28215A06EF0051BED4 /* baba_ipo.pdf in Resources */,
+				6EF3E2E62148D47A0035B37D /* LearningCenter.storyboard in Resources */,
+				6EEB5D26215A06EF0051BED4 /* thats_impossible.pdf in Resources */,
+				6E477876215344F00083FF10 /* Videos.storyboard in Resources */,
+				6EEB5D3A215B349B0051BED4 /* LoginHeaderTableViewCell.xib in Resources */,
+				263BC3441FE44A5700C5B80C /* Main.storyboard in Resources */,
+				179008A9265B6974005732E7 /* Barlow-Bold.ttf in Resources */,
+				6EEB5D2A215A06EF0051BED4 /* are_penny_stocks_for_losers.pdf in Resources */,
+				6EEB5D30215A06EF0051BED4 /* get_out.pdf in Resources */,
+				6EEB5D27215A06EF0051BED4 /* get_to_zee_chopper.pdf in Resources */,
+				6EEB5D32215A06EF0051BED4 /* why_the_fuck_are_you_here.pdf in Resources */,
+				6EEB5D2E215A06EF0051BED4 /* who_needs_a_game_plan.pdf in Resources */,
+				6EEB5D11215A06A50051BED4 /* Assets.xcassets in Resources */,
+				6EEB5D2D215A06EF0051BED4 /* the_og_book.pdf in Resources */,
+				17BBE8522681656E005F4D19 /* whatsNext.pdf in Resources */,
+				179008B3265B6974005732E7 /* Barlow-Thin.ttf in Resources */,
+				179008B4265B6974005732E7 /* Barlow-ExtraLightItalic.ttf in Resources */,
+				179008B2265B6974005732E7 /* Barlow-Regular.ttf in Resources */,
+				179008AF265B6974005732E7 /* Barlow-SemiBold.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3F5775DD015226F9E545073E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TradingExperts-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5B3D9DF5E87707BE670F6787 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TradingExperts/Pods-TradingExperts-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SimpleImageViewer/SimpleImageViewer.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/youtube-ios-player-helper/youtube_ios_player_helper.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SimpleImageViewer.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/youtube_ios_player_helper.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TradingExperts/Pods-TradingExperts-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		263BC3371FE44A5700C5B80C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EEB5CD6215591400051BED4 /* HorizontalScrollingTableViewCell.swift in Sources */,
+				263BC33F1FE44A5700C5B80C /* AppDelegate.swift in Sources */,
+				6E91D142214A3EBB0005DF89 /* UIViewControllerExtension.swift in Sources */,
+				26E467D62005EA4A00C63E42 /* VideosViewController.swift in Sources */,
+				6EEE6324212E7D4000095B42 /* Globals.swift in Sources */,
+				176D42D4262FDB4300336E85 /* CKLoginViewController.swift in Sources */,
+				2646052E21C5B5A100DA8B78 /* TEFont.swift in Sources */,
+				2646052C21C5B58F00DA8B78 /* TEGlobalStyles.swift in Sources */,
+				26FD53672069F2D6006735E7 /* PdfViewController.swift in Sources */,
+				17F3735C2662BF6000343C12 /* TEHelpers.swift in Sources */,
+				6EEB5D3C215B34AA0051BED4 /* LoginHeaderTableViewCell.swift in Sources */,
+				6EF3E2E42148D4510035B37D /* LearningCenterViewController.swift in Sources */,
+				1790087B265B1613005732E7 /* Clerk.swift in Sources */,
+				6EF3E2ED2148D7640035B37D /* AccountManager.swift in Sources */,
+				6EEB5CDB2155957D0051BED4 /* Handbook.swift in Sources */,
+				6E477878215345C20083FF10 /* VideoTableViewCell.swift in Sources */,
+				6EEB5CD9215595230051BED4 /* ImageCollectionViewCell.swift in Sources */,
+				264600A921CA0F1900F2CF2E /* Membership.swift in Sources */,
+				26FD53652069F1B5006735E7 /* ProfileViewController.swift in Sources */,
+				6E6CD69921312F1800E45A02 /* AlertTableViewCell.swift in Sources */,
+				26E467D42005E93000C63E42 /* MainTabBarController.swift in Sources */,
+				6E6CD69321312B3A00E45A02 /* Alert.swift in Sources */,
+				6E6CD69621312D1C00E45A02 /* NetworkController.swift in Sources */,
+				2646053621C62EED00DA8B78 /* StandardKeyboardToolbar.swift in Sources */,
+				6E01F1BB21532CD5006DDB0F /* TEVideo.swift in Sources */,
+				6E6CD68E2131261700E45A02 /* AlertsViewController.swift in Sources */,
+				17900888265B290C005732E7 /* ClerkObjs.swift in Sources */,
+				6EF308E72133725900213D1B /* TEColor.swift in Sources */,
+				6EEB5CF8215A03B60051BED4 /* Story.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		263BC3421FE44A5700C5B80C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				263BC3431FE44A5700C5B80C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		263BC3471FE44A5700C5B80C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				263BC3481FE44A5700C5B80C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		263BC34B1FE44A5700C5B80C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		263BC34C1FE44A5700C5B80C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		263BC34E1FE44A5700C5B80C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A5ED5E4D430CA18D5312EB4 /* Pods-TradingExperts.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TradingExperts/TradingExperts.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 24;
+				DEVELOPMENT_TEAM = GCRNF55MS8;
+				INFOPLIST_FILE = "$(SRCROOT)/TradingExperts/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.04;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bs.TradingExperts;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "TradingExperts-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		263BC34F1FE44A5700C5B80C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1774C45BAFF240217F76EF8 /* Pods-TradingExperts.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TradingExperts/TradingExperts.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 24;
+				DEVELOPMENT_TEAM = GCRNF55MS8;
+				INFOPLIST_FILE = "$(SRCROOT)/TradingExperts/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.04;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bs.TradingExperts;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "TradingExperts-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		263BC3361FE44A5700C5B80C /* Build configuration list for PBXProject "TradingExperts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				263BC34B1FE44A5700C5B80C /* Debug */,
+				263BC34C1FE44A5700C5B80C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		263BC34D1FE44A5700C5B80C /* Build configuration list for PBXNativeTarget "TradingExperts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				263BC34E1FE44A5700C5B80C /* Debug */,
+				263BC34F1FE44A5700C5B80C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 263BC3331FE44A5700C5B80C /* Project object */;
+}

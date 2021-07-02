@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Alerts-->
+        <scene sceneID="T0o-II-McV">
+            <objects>
+                <viewController storyboardIdentifier="AlertsViewController" title="Alerts" id="sq3-Eu-1Zw" customClass="AlertsViewController" customModule="TradingExperts" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KIG-c9-YuQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="alert-bg" translatesAutoresizingMaskIntoConstraints="NO" id="zCQ-ZM-Xvh">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d4c-d0-jHB">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Learn more about Alpha Alerts at TrandingExperts.org" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lhx-NM-wXl">
+                                        <rect key="frame" x="0.0" y="453" width="375" height="41"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="lhx-NM-wXl" firstAttribute="centerY" secondItem="d4c-d0-jHB" secondAttribute="centerY" constant="140" id="Uju-Su-X1X"/>
+                                    <constraint firstAttribute="trailing" secondItem="lhx-NM-wXl" secondAttribute="trailing" id="as7-bd-Hng"/>
+                                    <constraint firstItem="lhx-NM-wXl" firstAttribute="leading" secondItem="d4c-d0-jHB" secondAttribute="leading" id="dFc-Qv-Dik"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="B1l-tE-eVo">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="diF-fF-FKh"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="diF-fF-FKh" firstAttribute="trailing" secondItem="zCQ-ZM-Xvh" secondAttribute="trailing" id="8oM-29-M53"/>
+                            <constraint firstItem="B1l-tE-eVo" firstAttribute="leading" secondItem="diF-fF-FKh" secondAttribute="leading" id="CoW-ia-rsg"/>
+                            <constraint firstItem="diF-fF-FKh" firstAttribute="bottom" secondItem="zCQ-ZM-Xvh" secondAttribute="bottom" id="DPB-hB-Kco"/>
+                            <constraint firstItem="diF-fF-FKh" firstAttribute="trailing" secondItem="d4c-d0-jHB" secondAttribute="trailing" id="FWA-2E-0mF"/>
+                            <constraint firstItem="diF-fF-FKh" firstAttribute="bottom" secondItem="d4c-d0-jHB" secondAttribute="bottom" id="Xhk-xe-BDp"/>
+                            <constraint firstItem="d4c-d0-jHB" firstAttribute="leading" secondItem="diF-fF-FKh" secondAttribute="leading" id="bHM-Iu-Jsw"/>
+                            <constraint firstItem="diF-fF-FKh" firstAttribute="bottom" secondItem="B1l-tE-eVo" secondAttribute="bottom" id="c5v-xC-WBd"/>
+                            <constraint firstItem="zCQ-ZM-Xvh" firstAttribute="leading" secondItem="diF-fF-FKh" secondAttribute="leading" id="d4f-i6-zvk"/>
+                            <constraint firstItem="B1l-tE-eVo" firstAttribute="top" secondItem="diF-fF-FKh" secondAttribute="top" id="dFe-ba-gpX"/>
+                            <constraint firstItem="diF-fF-FKh" firstAttribute="trailing" secondItem="B1l-tE-eVo" secondAttribute="trailing" id="kg4-9G-zoi"/>
+                            <constraint firstItem="zCQ-ZM-Xvh" firstAttribute="top" secondItem="diF-fF-FKh" secondAttribute="top" id="s6D-ER-Rzj"/>
+                            <constraint firstItem="d4c-d0-jHB" firstAttribute="top" secondItem="diF-fF-FKh" secondAttribute="top" id="t8Q-kI-rSj"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Alpha Alerts" id="kog-bw-Okx"/>
+                    <connections>
+                        <outlet property="bgImageView" destination="zCQ-ZM-Xvh" id="lyZ-cg-jVz"/>
+                        <outlet property="bgNonMemberLabel" destination="lhx-NM-wXl" id="E6m-9i-wdE"/>
+                        <outlet property="bgView" destination="d4c-d0-jHB" id="Gv5-vc-Mab"/>
+                        <outlet property="tableView" destination="B1l-tE-eVo" id="p1E-9G-gYP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8iA-dD-PlU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-137" y="-9"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="alert-bg" width="500" height="750"/>
+    </resources>
+</document>

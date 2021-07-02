@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Learning Center-->
+        <scene sceneID="9TB-9a-OZr">
+            <objects>
+                <navigationController storyboardIdentifier="LearningCenterNavigationController" navigationBarHidden="YES" id="jYd-Su-a2Y" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Learning Center" id="lz7-tB-0gu"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="RdI-iQ-mBV">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="YE4-ug-lQ1" kind="relationship" relationship="rootViewController" id="lxe-Qd-wpk"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zjr-RJ-4Ka" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1460" y="45"/>
+        </scene>
+        <!--Learning Center-->
+        <scene sceneID="Dlr-JE-ka1">
+            <objects>
+                <viewController storyboardIdentifier="LearningCenterViewController" title="Learning Center" id="YE4-ug-lQ1" customClass="LearningCenterViewController" customModule="TradingExperts" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Q8B-xX-dyN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="yaO-vZ-bvt">
+                                <rect key="frame" x="0.0" y="44" width="375" height="574"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="YE4-ug-lQ1" id="H1E-d0-WUT"/>
+                                    <outlet property="delegate" destination="YE4-ug-lQ1" id="UGx-Zb-tcL"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Fr6-75-J06"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="yaO-vZ-bvt" firstAttribute="top" secondItem="Fr6-75-J06" secondAttribute="top" id="39U-t3-PHg"/>
+                            <constraint firstItem="yaO-vZ-bvt" firstAttribute="leading" secondItem="Fr6-75-J06" secondAttribute="leading" id="6W6-YO-XkI"/>
+                            <constraint firstItem="Fr6-75-J06" firstAttribute="trailing" secondItem="yaO-vZ-bvt" secondAttribute="trailing" id="K1O-Uw-GoS"/>
+                            <constraint firstItem="Fr6-75-J06" firstAttribute="bottom" secondItem="yaO-vZ-bvt" secondAttribute="bottom" id="beX-cP-Zn9"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="TRADING EXPERTS" id="ycX-ZC-0Cq"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="tableView" destination="yaO-vZ-bvt" id="Qo8-WT-Idf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sBD-d8-rbx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="25" y="20"/>
+        </scene>
+    </scenes>
+</document>
