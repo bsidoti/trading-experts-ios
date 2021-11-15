@@ -76,7 +76,7 @@ class Clerk {
 
     // MARK: - network requests
     func getClient(clientJWT: String, completion: @escaping (Result<Client>) -> ()) {
-        AF.request("\(frontendAPIURL)/v1/client", method: .get, parameters: nil, encoding: JSONEncoding.default, headers: ["Authorization": clientJWT]).response { (inData) in
+        AF.request("\(frontendAPIURL)/v1/client?_is_native=true", method: .get, parameters: nil, encoding: JSONEncoding.default, headers: ["Authorization": clientJWT]).response { (inData) in
             guard let response = inData.response, let data = inData.data else {
                 self.currentClient = nil
                 completion(Result.failure(NetworkingError.generic))
@@ -118,7 +118,7 @@ class Clerk {
         }
         
         
-        AF.request("\(frontendAPIURL)/v1/client/sessions/\(currentSession.id)/end", method: .post, parameters: nil, encoding: JSONEncoding.default, headers: ["Authorization": clientJWT]).response { (inData) in
+        AF.request("\(frontendAPIURL)/v1/client/sessions/\(currentSession.id)/end?_is_native=true", method: .post, parameters: nil, encoding: JSONEncoding.default, headers: ["Authorization": clientJWT]).response { (inData) in
             // regardless of the response, log the user out.
             self.currentClient = nil
             completion(nil)

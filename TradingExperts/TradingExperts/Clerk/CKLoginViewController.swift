@@ -62,7 +62,7 @@ class CKLoginViewController: UIViewController {
             if urlMatch.hasSuffix("default-redirect") || urlMatch == strongSelf.clerkObj.afterSignInURL {
                 strongSelf.webDataStore.httpCookieStore.getAllCookies { (cookies: [HTTPCookie]) in
                     for cook in cookies {
-                        if cook.name == "__session" {
+                        if cook.name == "__client" {
                             strongSelf.clerkObj.getClient(clientJWT: cook.value, completion: { (result: Result<Client>) in
                                 strongSelf.delegate?.signedIn()
                             })
