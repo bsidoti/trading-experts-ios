@@ -36,7 +36,7 @@ enum HorizontalScrollingCellType {
     }
 }
 
-protocol HorizontalScrollingTableViewCellDelegate: class {
+protocol HorizontalScrollingTableViewCellDelegate: AnyObject {
     func didSelectCell(cellData: ImageCollectionViewCellData)
     func collectionViewDidScroll(cell: HorizontalScrollingTableViewCell, offset: CGFloat)
 }

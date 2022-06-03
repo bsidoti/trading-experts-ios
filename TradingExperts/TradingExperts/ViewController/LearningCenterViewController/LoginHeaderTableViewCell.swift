@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol LoginHeaderTableViewCellDelegate: class {
+protocol LoginHeaderTableViewCellDelegate: AnyObject {
     func didLogout()
     func didLogin()
 }

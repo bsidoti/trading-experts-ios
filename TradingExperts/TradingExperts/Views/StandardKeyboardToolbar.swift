@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol KeyboardAvoidingProtocol: class {
+protocol KeyboardAvoidingProtocol: AnyObject {
     var lastScrollViewOffset: CGPoint { get set }
     var scrollViewBottomConstraint: NSLayoutConstraint! { get }
     var scrollView: UIScrollView! { get }
@@ -46,7 +46,7 @@ extension KeyboardAvoidingProtocol {
     }
 }
 
-protocol StandardKeyboardToolbarDelegate: class {
+protocol StandardKeyboardToolbarDelegate: AnyObject {
     func donePressed()
 }
 

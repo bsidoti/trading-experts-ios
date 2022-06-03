@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 import WebKit
 
-protocol CKLoginViewControllerDelegate: class {
+protocol CKLoginViewControllerDelegate: AnyObject {
     func signedIn()
 }
 
